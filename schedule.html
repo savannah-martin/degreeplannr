@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Degree Plannr | Schedule</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- TODO -->
+    <!-- Navbar -->
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <h2>Schedule</h2>
+      </div>
+      <div class="row main-content">
+        <!-- Classes -->
+        <div class="col-lg-4 required-classes">
+          <h3>Required Classes</h3>
+
+          <ul class="nav nav-tabs" id="coursesTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="lac-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#lac"
+                type="button"
+                role="tab"
+                aria-controls="lac"
+                aria-selected="true"
+              >
+                LAC
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="cs-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#cs"
+                type="button"
+                role="tab"
+                aria-controls="cs"
+                aria-selected="false"
+              >
+                CS
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content px-3" id="coursesTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="lac"
+              role="tabpanel"
+              aria-labelledby="lac-tab"
+            >
+              <!-- LAC Requirements -->
+              <div class="my-4">
+                <div class="card my-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <h5 class="card-title col">
+                        <b>Life of Christ</b>
+                      </h5>
+                      <p class="col-3 text-end">2 hours</p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-subtitle">BIB 121</p>
+                      </div>
+                      <div class="col-4 text-end">
+                        <span class="text-muted">Fall</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card-subtitle "> CIS 171 </p> -->
+                    <!-- <h6 class="card-subtitle mb-3 fw-light"></h6> -->
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <!-- <p class="card-text text-muted text-end">Fall</p> -->
+                    <a
+                      href="#bib121"
+                      class="card-link fw-light"
+                      data-bs-toggle="collapse"
+                      role="button"
+                      aria-expanded="false"
+                      >Course description ›</a
+                    >
+                    <div
+                      class="course-description collapse card-text"
+                      id="bib121"
+                    >
+                      <p class="text-muted card-text">
+                        A thorough textual study of the life of Jesus the
+                        Christ. Emphasis is given to his virgin birth, his
+                        message and ministry, his crucifixion, his resurrection,
+                        and his ascension, all leading to a greater awareness of
+                        his greatness as the Son of God and Savior of the world.
+                        Moral, doctrinal, historical, and practical aspects of
+                        the life of Christ are also emphasized. (Text course.)
+                      </p>
+                      <!-- <p class="card-text small">
+                        Corequisite: MAT 101 College Algebra.
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card my-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <h5 class="card-title col">
+                        <b>Speech</b>
+                      </h5>
+                      <p class="col-3 text-end">2 hours</p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-subtitle">BIB 121</p>
+                      </div>
+                      <div class="col-4 text-end">
+                        <span class="text-muted">Fall, Spring</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card-subtitle "> CIS 171 </p> -->
+                    <!-- <h6 class="card-subtitle mb-3 fw-light"></h6> -->
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <!-- <p class="card-text text-muted text-end">Fall</p> -->
+                    <a
+                      href="#cis171"
+                      class="card-link fw-light"
+                      data-bs-toggle="collapse"
+                      role="button"
+                      aria-expanded="false"
+                      >Course description ›</a
+                    >
+                    <div
+                      class="course-description collapse card-text"
+                      id="cis171"
+                    >
+                      <p class="text-muted card-text">
+                        A study of the design of algorithms, pseudocode, data
+                        types, control structures, arrays, program testing, and
+                        text file processing using a high-level programming
+                        language.
+                      </p>
+                      <p class="card-text small">
+                        Corequisite: MAT 101 College Algebra.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="cs"
+              role="tabpanel"
+              aria-labelledby="profile-cs"
+            >
+              <!-- CS Requirements -->
+              <div class="my-4">
+                <div class="card my-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <h5 class="card-title col">
+                        <b>Computer Programming I</b>
+                      </h5>
+                      <p class="col-3 text-end">3 hours</p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-subtitle">CIS 171</p>
+                      </div>
+                      <div class="col-4 text-end">
+                        <span class="text-muted">Fall</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card-subtitle "> CIS 171 </p> -->
+                    <!-- <h6 class="card-subtitle mb-3 fw-light"></h6> -->
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <!-- <p class="card-text text-muted text-end">Fall</p> -->
+                    <a
+                      href="#cis171"
+                      class="card-link fw-light"
+                      data-bs-toggle="collapse"
+                      role="button"
+                      aria-expanded="false"
+                      >Course description ›</a
+                    >
+                    <div
+                      class="course-description collapse card-text"
+                      id="cis171"
+                    >
+                      <p class="text-muted card-text">
+                        A study of the design of algorithms, pseudocode, data
+                        types, control structures, arrays, program testing, and
+                        text file processing using a high-level programming
+                        language.
+                      </p>
+                      <p class="card-text small">
+                        Corequisite: MAT 101 College Algebra.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card my-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <h5 class="card-title col">
+                        <b>Computer Programming II</b>
+                      </h5>
+                      <p class="col-3 text-end">3 hours</p>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-subtitle">CIS 172</p>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <span class="text-muted">Spring</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card-subtitle "> CIS 171 </p> -->
+                    <!-- <h6 class="card-subtitle mb-3 fw-light"></h6> -->
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <!-- <p class="card-text text-muted text-end">Fall</p> -->
+                    <a
+                      href="#cis172"
+                      class="card-link fw-light"
+                      data-bs-toggle="collapse"
+                      role="button"
+                      aria-expanded="false"
+                      >Course description ›</a
+                    >
+                    <div
+                      class="course-description collapse card-text"
+                      id="cis172"
+                    >
+                      <p class="text-muted card-text">
+                        A continuation of CIS 171. Emphasis is on
+                        object-oriented constructs and techniques, generics and
+                        use of common data structures supported by the language.
+                      </p>
+                      <p class="card-text small">
+                        Prerequisite: CIS 171 Computer Programming I.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card my-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <h5 class="card-title col">
+                        <b>Intro to Web Design</b>
+                      </h5>
+                      <p class="col-3 text-end">3 hours</p>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-subtitle">CIS 211</p>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <span class="text-muted">Spring</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card-subtitle "> CIS 171 </p> -->
+                    <!-- <h6 class="card-subtitle mb-3 fw-light"></h6> -->
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <!-- <p class="card-text text-muted text-end">Fall</p> -->
+                    <a
+                      href="#cis211"
+                      class="card-link fw-light"
+                      data-bs-toggle="collapse"
+                      role="button"
+                      aria-expanded="false"
+                      >Course description ›</a
+                    >
+                    <div
+                      class="course-description collapse card-text"
+                      id="cis211"
+                    >
+                      <p class="text-muted card-text">
+                        An interdisciplinary introduction to web design covering
+                        both technical and artistic aspects. The course will
+                        cover the current tools and technologies used for web
+                        design and development. Emphasis will also be given to
+                        the artistic principles relevant to good web design.
+                        Students will design, develop, and critique websites.
+                      </p>
+                      <!-- <p class=" card-text small" >Prerequisite: CIS 171 Computer Programming I.</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester Schedules -->
+        <div class="col-lg-6 semester-schedules">
+          <h3>Semester Schedules</h3>
+
+          <div class="accordion my-4" id="fall2019">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="fall2019heading">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#fall2019schedule"
+                  aria-expanded="true"
+                  aria-controls="fall2019schedule"
+                >
+                  <h4 class="my-0">Fall 2019</h4>
+                </button>
+              </h2>
+              <div
+                id="fall2019schedule"
+                class="accordion-collapse collapse show"
+                aria-labelledby="fall2019heading"
+              >
+                <div class="accordion-body">
+                  <table class="table table-hover">
+                    <thead>
+                      <th>Course</th>
+                      <td></td>
+                      <td></td>
+                      <th>Credits</th>
+                    </thead>
+                    <tr>
+                      <td>BIB 121</td>
+                      <td>
+                        <span class="fw-bold"> The Life of Christ </span>
+                      </td>
+                      <td>
+                        <span class="badge bg-primary"> LAC </span>
+                      </td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>CIS 171</td>
+                      <td>
+                        <span class="fw-bold">Computer Programming I</span>
+                      </td>
+                      <td>
+                        <span class="badge bg-secondary"> CS </span>
+                      </td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>COM 140</td>
+                      <td>
+                        <span class="fw-bold">Speech</span>
+                      </td>
+                      <td>
+                        <span class="badge bg-primary"> LAC </span>
+                      </td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>CYB 101</td>
+                      <td>
+                        <span class="fw-bold">Intro to Cybersecurity</span>
+                      </td>
+                      <td></td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>MAT 120</td>
+                      <td>
+                        <span class="fw-bold">Precalculus</span>
+                      </td>
+                      <td></td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="fw-bold">14</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion my-4" id="spring2020">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Spring 2020
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong>
+                  It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 position-sticky top-0 h-100 ps-5 toc">
+          <p class="text-muted">On this page</p>
+          <nav>
+            <ul>
+              <li><a href="#fall2020">Fall 2020</a></li>
+              <li><a href="#spring2021">Spring 2021</a></li>
+              <li><a href="">Fall 2021</a></li>
+              <li><a href="">Spring 2022</a></li>
+              <li><a href="">Fall 2022</a></li>
+              <li><a href="">Spring 2023</a></li>
+              <li><a href="">Fall 2023</a></li>
+              <li><a href="">Spring 2024</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-dark text-light py-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <p>Made with ❤️ by FHU students!</p>
+          </div>
+
+          <div class="col-md-3">
+            <p>&copy; 2021 Freed-Hardeman University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
