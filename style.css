@@ -71,37 +71,8 @@ img {
   width: 100%;
 }
 
-/*  Navbar */
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-}
-
-.navbar {
-  height: 70px;
-  padding-left: 20px;
-}
-
-.navbar .container .logo {
-  color: white;
-  cursor: pointer;
-}
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar ul a {
-  padding: 10px;
-  margin: 0 5px;
-}
-
 .navbar ul a:hover {
   font-size: larger;
-}
 
 /* profile */
 img {
@@ -154,22 +125,6 @@ img {
   color: #0275d8;
 }
 
-/* table */
-th {
-  /* border: 3px solid red; */
-  padding: 8px;
-  border-bottom: 2px solid darkslategray;
-}
-
-/* th {
-  color:rgb(204, 58, 73);
-} */
-
-td {
-  padding: 6px;
-  padding-left: 14px;
-  /* border: 3px solid red; */
-}
 
 @media only screen and (max-width: 667px) {
   .fa-graduation-cap {
