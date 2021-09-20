@@ -1,6 +1,6 @@
-* {
-    /* border: 1px solid salmon; */
-}
+/* * {
+    border: 1px solid salmon;
+} */
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -159,9 +159,9 @@ th {
   border-bottom: 2px solid darkslategray;
 }
 
-th {
-  /* color:rgb(204, 58, 73); */
-}
+/* th {
+  color:rgb(204, 58, 73);
+} */
 
 td {
   padding: 6px;
