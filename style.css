@@ -27,3 +27,179 @@ body {
 .required-classes .card {
     border-left: 8px solid #0c63e4;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;900&display=swap");
+
+:root {
+  --primary-color: rgb(218, 68, 83);
+  --secondary-color: #d1ccc0;
+  --dark-color: #0a0a30;
+  --light-color: #c5dceb4b;
+}
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Urbanist, sans-serif;
+  color: #333;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  /* color: rgb(255, 255, 255); */
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*  Navbar */
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.navbar {
+  height: 70px;
+}
+
+.navbar .container .logo {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar ul a:hover {
+  font-size: larger;
+}
+
+/* profile */
+img {
+  min-width: 250px;
+  max-width: 250px;
+  border-radius: 5%;
+  box-shadow: 12px 12px 15px 5px rgba(56, 46, 48, 0.562);
+}
+/* profile info */
+.profile-main .container {
+  display: flex;
+  justify-content: center;
+}
+
+.right-info h2 {
+ font-size: x-large;
+}
+
+.right-info p {
+  font-size: large;
+  padding-bottom: 12px;
+}
+/* stats */
+.stats .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats {
+  text-align: center;
+}
+
+.stats .container .col {
+  /* flex-basis: 100%; */
+  justify-content: center;
+  
+}
+
+.bubble {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  margin: auto;  
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;}
+
+.bubble p {
+  padding: 35px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+/* table */
+th {
+  /* border: 3px solid red; */
+  padding: 8px;
+  border-bottom: 2px solid darkslategray;
+}
+
+th {
+  /* color:rgb(204, 58, 73); */
+}
+
+td {
+  padding: 6px;
+  padding-left: 14px;
+  /* border: 3px solid red; */
+}
+
+@media only screen and (max-width: 667px) {
+  .fa-graduation-cap {
+    display: none;
+  }
+  .logo {
+    font-size: larger;
+  }
+  .navbar {
+    padding-top: 10px;
+  }
+
+  /* profile main */
+  .profile-main .container {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: auto;
+  }
+  .profile-main h2 {
+    padding-left: 35px;
+  }
+  
+  .profile-main p {
+    padding-left: 35px;
+  }
+
+  .stats .container {
+    flex-direction: column;
+  }
+}
+
+.profile-main, .dash {
+    padding-top: 80px;
+}
