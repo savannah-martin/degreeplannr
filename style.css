@@ -82,6 +82,7 @@ img {
 
 .navbar {
   height: 70px;
+  padding-left: 20px;
 }
 
 .navbar .container .logo {
