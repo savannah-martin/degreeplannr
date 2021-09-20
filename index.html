@@ -26,55 +26,27 @@
   <body class="d-flex flex-column h-100">
     <!-- TODO -->
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-      style="
-        background-color: #90d5ec;
-        background-image: linear-gradient(
-          315deg,
-          rgb(49, 49, 49) 0%,
-          #130003 74%
-        );
-      "
-    >
-      <a class="navbar-brand px-2" href="index.html">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav px-1">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home<span class="sr-only"></span
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"
+            >Home <span class="sr-only"></span
+          ></a>
+          <a class="nav-item nav-link" href="dashboard.html">Dashboard</a>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div> -->
+      </div>
     </nav>
 
     <section class="profile-main bg-light">

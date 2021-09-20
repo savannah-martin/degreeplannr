@@ -26,60 +26,28 @@
   <body class="d-flex flex-column h-100">
     <!-- TODO -->
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-      style="
-        background-color: #90d5ec;
-        background-image: linear-gradient(
-          315deg,
-          rgb(49, 49, 49) 0%,
-          #130003 74%
-        );
-      "
-    >
-      <a class="navbar-brand px-2" href="index.html">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav px-1">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home<span class="sr-only"></span
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"
+            >Home <span class="sr-only"></span
+          ></a>
+          <a class="nav-item nav-link" href="dashboard.html">Dashboard</a>
+        </div>
       </div>
     </nav>
-    <!-- hamburger links -->
-
-    <div class="menu">
-      <ul>
-        <li>
-          <a href="#"> <i class="fas fa-home fa-xs"></i> Home</a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-plus fa-xs"></i> Share</a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-stream fa-xs"></i> Blog</a>
-        </li>
-        <li>
-          <a href="#"><i class="far fa-paper-plane"></i> Contact</a>
-        </li>
-      </ul>
-    </div>
 
     <!-- Main Content -->
     <div class="container-fluid dash">
